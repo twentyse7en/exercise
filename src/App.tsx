@@ -138,7 +138,7 @@ function ExerciseCard(props: {
             props.onToggleToday()
           }}
         >
-          ✓
+          <CheckIcon />
         </button>
       </div>
 
@@ -152,5 +152,20 @@ function ExerciseCard(props: {
         />
       </div>
     </div>
+  )
+}
+
+function CheckIcon() {
+  return (
+    <svg className="checkIcon" viewBox="0 0 24 24">
+      <path
+        d="M20 6L9 17l-5-5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   )
 }
