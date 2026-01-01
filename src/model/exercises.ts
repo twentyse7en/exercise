@@ -11,6 +11,20 @@ export type Exercise = {
 
 export const EXERCISES: Exercise[] = [
   {
+    id: 'warmup',
+    title: 'Warm up',
+    subtitle: 'Mobility',
+    emoji: '🧘',
+    tint: '#ffb6e1',
+    items: [
+      'Neck rotations — 10x',
+      'Arm circles — 10x',
+      'Hip circles — 10x',
+      'Jumping Jacks — 10x',
+      'Brisk marching — 1 Min'
+    ],
+  },
+  {
     id: 'running',
     title: 'Running',
     subtitle: 'Easy pace',
@@ -28,21 +42,7 @@ export const EXERCISES: Exercise[] = [
       'Push-ups — 3 × 8',
       'Bodyweight squats — 3 × 12',
       'Plank — 3 × 30s',
-      'Glute bridge — 3 × 12',
-    ],
-  },
-  {
-    id: 'warmup',
-    title: 'Warm up',
-    subtitle: 'Mobility',
-    emoji: '🧘',
-    tint: '#ffb6e1',
-    items: [
-      'Neck rotations — 30s',
-      'Shoulder rolls — 30s',
-      'Arm circles — 30s',
-      'Hip circles — 30s',
-      'Leg swings — 10/side',
+      'Lunges — 10x',
     ],
   },
 ]
