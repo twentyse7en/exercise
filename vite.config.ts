@@ -10,26 +10,26 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon.svg'],
       manifest: {
-        name: 'React PWA',
-        short_name: 'PWA',
-        description: 'A minimal React Progressive Web App scaffold.',
+        name: 'Exercise Tracker',
+        short_name: 'Exercise',
+        description: 'A minimal local-only exercise tracker.',
         theme_color: '#0b1020',
         background_color: '#0b1020',
         display: 'standalone',
-        start_url: '/',
+        start_url: '.',
         icons: [
           {
-            src: '/pwa-192x192.svg',
+            src: 'pwa-192x192.svg',
             sizes: '192x192',
             type: 'image/svg+xml'
           },
           {
-            src: '/pwa-512x512.svg',
+            src: 'pwa-512x512.svg',
             sizes: '512x512',
             type: 'image/svg+xml'
           },
           {
-            src: '/pwa-maskable-512x512.svg',
+            src: 'pwa-maskable-512x512.svg',
             sizes: '512x512',
             type: 'image/svg+xml',
             purpose: 'maskable'

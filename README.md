@@ -16,9 +16,13 @@ npm run build
 npm run preview
 ```
 
+## Deploy (GitHub Pages)
+
+- Push to `main` to deploy via `.github/workflows/deploy.yml`.
+- In GitHub repo settings: `Settings → Pages → Build and deployment → Source: GitHub Actions`.
+
 ## PWA notes
 
 - Service worker is registered in `src/main.tsx`.
 - PWA config lives in `vite.config.ts` (`VitePWA(...)`).
 - Replace the SVG icons in `public/` with your real app icons (typically PNG 192×192 and 512×512) before shipping.
-
