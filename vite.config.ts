@@ -8,7 +8,12 @@ export default defineConfig({
     VitePWA({
       injectRegister: false,
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'apple-touch-icon.svg'],
+      includeAssets: [
+        'favicon_io/favicon.ico',
+        'favicon_io/apple-touch-icon.png',
+        'favicon_io/favicon-16x16.png',
+        'favicon_io/favicon-32x32.png'
+      ],
       manifest: {
         name: 'Exercise Tracker',
         short_name: 'Exercise',
@@ -19,27 +24,21 @@ export default defineConfig({
         start_url: '.',
         icons: [
           {
-            src: 'pwa-192x192.svg',
+            src: 'favicon_io/android-chrome-192x192.png',
             sizes: '192x192',
-            type: 'image/svg+xml'
+            type: 'image/png'
           },
           {
-            src: 'pwa-512x512.svg',
+            src: 'favicon_io/android-chrome-512x512.png',
             sizes: '512x512',
-            type: 'image/svg+xml'
-          },
-          {
-            src: 'pwa-maskable-512x512.svg',
-            sizes: '512x512',
-            type: 'image/svg+xml',
-            purpose: 'maskable'
+            type: 'image/png'
           }
         ]
       },
       devOptions: { enabled: true },
       workbox: {
         mode: 'development',
-        globPatterns: ['**/*.{js,css,html,svg,webmanifest}']
+        globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest}']
       }
     })
   ]
